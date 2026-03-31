@@ -1,7 +1,5 @@
 const menuToggle = document.getElementById("menuToggle");
 const mainNav = document.getElementById("mainNav");
-const contactForm = document.getElementById("contactForm");
-const formFeedback = document.getElementById("formFeedback");
 const scrollGallery = document.getElementById("scrollGallery");
 const scrollGalleryTrack = document.getElementById("scrollGalleryTrack");
 
@@ -71,23 +69,4 @@ if ("IntersectionObserver" in window) {
   revealTargets.forEach((target) => observer.observe(target));
 } else {
   revealTargets.forEach((target) => target.classList.add("is-visible"));
-}
-
-if (contactForm && formFeedback) {
-  contactForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    const formData = new FormData(contactForm);
-    const name = String(formData.get("nombre") || "").trim();
-    const email = String(formData.get("email") || "").trim();
-    const message = String(formData.get("mensaje") || "").trim();
-
-    const subject = encodeURIComponent(`Consulta web Pastelería Edelweiss - ${name}`);
-    const body = encodeURIComponent(
-      `Nombre: ${name}\nEmail: ${email}\n\nMensaje:\n${message}`
-    );
-
-    formFeedback.textContent = "Se abrirá tu aplicación de correo para enviar la consulta.";
-    window.location.href = `mailto:info@pasteleriaedelweiss.es?subject=${subject}&body=${body}`;
-  });
 }

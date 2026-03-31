@@ -32,8 +32,8 @@
       </button>
 
       <nav class="nav" id="mainNav">
-        <a href="#especialidades">Especialidades</a>
         <a href="#galeria">Galería</a>
+        <a href="#especialidades">Especialidades</a>
         <a href="#encargos">Encargos</a>
         <a href="#contacto">Contacto</a>
       </nav>
@@ -45,27 +45,19 @@
       <div class="container hero-grid">
         <div class="hero-copy">
           <p class="eyebrow text-reveal">Pastelería tradicional con mirada contemporánea</p>
-          <h1 class="text-reveal">Dulces con oficio, sabor casero y presencia de celebración.</h1>
+          <h1 class="text-reveal">Recetas de siempre,<br />
+            hechas para hoy.</h1>
           <p class="hero-intro text-reveal">
-            En Edelweiss elaboramos tartas, pasteles y bollería con una cocina reposada,
-            recetas queridas y una presentación pensada para que cada visita se recuerde.
+            En Edelweiss elaboramos pastelería artesanal donde la tradición se encuentra 
+            con una mirada fresca
+
           </p>
 
           <div class="hero-actions text-reveal">
-            <a href="#encargos" class="btn btn-primary">Encargar una tarta</a>
-            <a href="#galeria" class="btn btn-secondary">Descubrir la vitrina</a>
+            <a href="#encargos" class="btn btn-primary">Haz tu encargo</a>
+            <a href="#galeria" class="btn btn-secondary">Descubre la vitrina</a>
           </div>
 
-          <div class="hero-highlights">
-            <article class="highlight-card text-reveal">
-              <span class="highlight-label">Obrador</span>
-              <p>Elaboración artesanal diaria con atención al detalle.</p>
-            </article>
-            <article class="highlight-card text-reveal">
-              <span class="highlight-label">Celebraciones</span>
-              <p>Encargos personalizados para cumpleaños, comuniones y eventos.</p>
-            </article>
-          </div>
         </div>
       </div>
     </section>
@@ -164,50 +156,59 @@
     <section class="section contact-section" id="contacto">
       <div class="container contact-grid">
         <div class="contact-card reveal-target">
-          <span class="section-label text-reveal">Contacto</span>
+          <span class="section-label text-reveal">Ubicación</span>
           <h2 class="text-reveal">Visítanos en Zaragoza</h2>
 
           <div class="contact-info">
             <p><strong>Dirección</strong><br />Calle Félix Latassa, 12</p>
-            <p><strong>Teléfono</strong><br />976 55 98 22</p>
-            <p><strong>Horario</strong><br />Martes a viernes: 09:00 a 14:00 y 17:00 a 20:00<br />Sábado y domingo: 09:00 a 14:00</p>
           </div>
 
           <div class="contact-links">
-            <a href="https://www.instagram.com/edelweisspasteleria/" target="_blank" rel="noreferrer" class="contact-link-box">
-              Instagram
-            </a>
             <a href="https://www.google.com/maps/place/Pasteler%C3%ADa+Edelweiss/@41.643083,-0.8944979,17z/data=!4m14!1m7!3m6!1s0xd5914dbe5385d4d:0x3eb2dde590e55d0!2sPasteler%C3%ADa+Edelweiss!8m2!3d41.643079!4d-0.891923!16s%2Fg%2F11f_y8y3_j!3m5!1s0xd5914dbe5385d4d:0x3eb2dde590e55d0!8m2!3d41.643079!4d-0.891923!16s%2Fg%2F11f_y8y3_j?entry=ttu&g_ep=EgoyMDI2MDMyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noreferrer" class="contact-link-box">
               Ver ubicación en Google Maps
             </a>
           </div>
+
+          <div class="map-card">
+            <iframe
+              title="Mapa de Pastelería Edelweiss"
+              src="https://www.google.com/maps?q=Pasteler%C3%ADa%20Edelweiss%20Zaragoza&z=16&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
 
-        <div class="contact-card contact-soft reveal-target">
-          <h3 class="text-reveal">Cuéntanos qué necesitas</h3>
-          <p class="contact-form-copy text-reveal">
-            Este formulario prepara un correo con tus datos para que el contacto sea inmediato aunque todavía no haya backend.
-          </p>
+        <div class="contact-card reveal-target">
+          <span class="section-label text-reveal">Atención</span>
+          <h2 class="text-reveal">Horario y contacto</h2>
 
-          <form class="contact-form" id="contactForm">
-            <div class="form-group">
-              <label for="nombre">Nombre</label>
-              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
-            </div>
+          <div class="contact-info">
+            <p class="contact-phone-row">
+              <span><strong>Teléfono</strong><br />976 55 98 22</span>
+              <a href="tel:+34976559822" class="contact-link-box">
+                Llamar ahora
+              </a>
+            </p>
+            <p><strong>Horario</strong><br />Martes a viernes: 09:00 a 14:00 y 17:00 a 20:00<br />Sábado y domingo: 09:00 a 14:00</p>
+          </div>
 
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="tu@email.com" required />
-            </div>
-
-            <div class="form-group">
-              <label for="mensaje">Mensaje</label>
-              <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos si buscas una tarta, una fecha concreta o una idea de celebración." rows="5" required></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary">Preparar mensaje</button>
-            <p class="form-feedback" id="formFeedback" aria-live="polite"></p>
-          </form>
+          <div class="social-block text-reveal">
+            <h3 class="social-title">Siguenos en redes!</h3>
+            <a
+              href="https://www.instagram.com/edelweisspasteleria/"
+              target="_blank"
+              rel="noreferrer"
+              class="instagram-preview"
+              aria-label="Ver perfil de Instagram de Pastelería Edelweiss"
+            >
+              <img src="img/logo-edelweiss.png" alt="Miniatura del perfil de Instagram de Pastelería Edelweiss" />
+              <div class="instagram-preview-copy">
+                <span class="instagram-preview-label">@edelweisspasteleria</span>
+                <span class="instagram-preview-meta">Ver perfil en Instagram</span>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </section>
